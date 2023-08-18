@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST'){ // Проверяем, что метод запроса - POST
+if($_SERVER['REQUEST_METHOD'] == 'GET'){ // Проверяем, что метод запроса - POST
     header('Content-Type: application/json');
     header('Accept: application/json');
     $_POST = json_decode(file_get_contents('php://input'), true);
